@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: xat5g2gra-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: xat5g2gra-python 
+  name: xat5g2gra-python
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: xat5g2gra-python
+    weight: 100 

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: xat5g2gra-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/xat5g2gra-python
